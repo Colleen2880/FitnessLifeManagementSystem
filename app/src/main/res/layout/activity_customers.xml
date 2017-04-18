@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.bignerdranch.android.fitnesslifemanagementsystem.LoggedInFragment"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/login_fragment"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer List"
+            android:layout_marginLeft="125dp"
+            />
+
+        <Button
+
+            android:id="@+id/addCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:onClick="onClick"
+            android:text="@string/add"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/pic"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="75dp"
+            android:text="@string/customer_name"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/buttonCustDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:linksClickable="false"
+            android:onClick="onClick"
+            android:text="@string/arrow"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
