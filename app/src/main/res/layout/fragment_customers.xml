@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerslist"
+        android:hint="@string/customersname_hint"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+
+
+        />
+
+
+
+
+
+    <EditText
+        android:id="@+id/addphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:hint="phone number"/>
+
+
+
+    <EditText
+        android:id="@+id/addaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:inputType="textPostalAddress"
+        android:hint="@string/address"/>
+
+
+
+
+    <EditText
+        android:id="@+id/addemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+
+        android:hint="@string/email_address"/>
+
+
+
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/savebutton"
+        android:onClick="onClick"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -9,10 +9,15 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+ //   MyDBHandler dbHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    //    MyDBHandler handler = new MyDBHandler(this);
+      //  handler.getWritableDatabase();
 
 
 

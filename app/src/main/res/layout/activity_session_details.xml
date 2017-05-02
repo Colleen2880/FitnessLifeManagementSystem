@@ -6,20 +6,38 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:padding="5dp"
     >
 
 
-    <fragment
-        android:id="@+id/fragment5"
-        android:name="com.bignerdranch.android.fitnesslifemanagementsystem.LoggedInFragment"
-        android:layout_width="184dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/login_fragment"/>
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment5"
+            android:name="com.bignerdranch.android.fitnesslifemanagementsystem.LoggedInFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            tools:layout="@layout/login_fragment"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:padding="5dp"
+        />
 
     <TextView
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:text="Session Details:  for Customer name"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         />
 
 
@@ -38,9 +56,13 @@
         android:layout_height="50dp"/>
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:singleLine="false"/>
+        android:layout_height="75dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        />
 
     <Button
         android:id="@+id/saveButton"

@@ -19,6 +19,8 @@ public class PaymentActivity extends AppCompatActivity {
     public void onClick(View view){
         int button = view.getId();
 
+
+
         if(button == R.id.emailButton){
             //get email address, and sent receipt to email address
             Intent intent = new Intent(PaymentActivity.this, SessionActivity.class);

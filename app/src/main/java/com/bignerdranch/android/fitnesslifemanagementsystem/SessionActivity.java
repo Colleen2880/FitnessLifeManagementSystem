@@ -20,6 +20,7 @@ public class SessionActivity extends AppCompatActivity {
     public void onClick(View view){
         int button = view.getId();
 
+
         if(button == R.id.sessionAdd){
             Intent intent = new Intent(SessionActivity.this, AddActivity.class);
             startActivity(intent);

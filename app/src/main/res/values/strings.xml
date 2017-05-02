@@ -4,14 +4,14 @@
     <string name="unsuccessful_login_attempt">Your username or password is incorrect, please try again</string>
     <string name="customer_name">Customer Name      </string>
     <string name="remaining_sessions">Remaining sessions:      </string>
-    <string name="add">+</string>
+    <string name="add_customers">Add Customers</string>
     <string name="title_activity_login">Sign in</string>
     <string name="payment_successful">Your Payment was successful!</string>
     <string name="ccnumber">Credit Card #</string>
     <string name="expdate">exp date</string>
     <string name="cvv">cvv</string>
     <string name="sig">Sign Here</string>
-    <string name="arrow">></string>
+    <string name="arrow">Customer Details</string>
     <string name="completed">Completed</string>
     <string name="save">Save</string>
     <string name="loggedin">LoggedIn:JDOE</string>
@@ -21,6 +21,13 @@
     <string name="login_password">Password: </string>
     <string name="login_button">Log In</string>
     <string name="welcome">Welcome, </string>
+    <string name="add_sessions">Add Sessions</string>
+    <string name="home">Home</string>
+    <string name="add_new_customers">Add new Customers</string>
+    <string name="address">address</string>
+    <string name="email_address">Email Address</string>
+    <string name="savebutton">Save</string>
+    <string name="customersname_hint">Enter a customers name</string>
 
 
     <!-- Strings related to login -->

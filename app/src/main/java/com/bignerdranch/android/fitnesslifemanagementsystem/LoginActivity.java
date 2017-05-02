@@ -32,32 +32,5 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(i);
         }
     }
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.settings, menu);
-
-
-        return true;
-
-    }
-
-    ;
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-        if (id == R.id.logoff_menu) {
-            super.onOptionsItemSelected(item);
-            Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
-        return true;
-    }
-*/
 }

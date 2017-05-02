@@ -16,9 +16,15 @@ public class SessionDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_session_details);
     }
 
-    public void onClick(View view){
-        Intent intent = new Intent(SessionDetailsActivity.this, SessionActivity.class);
-        startActivity(intent);
+    public void onClick(View view) {
+        int button = view.getId();
+
+
+
+        if (button == R.id.saveButton) {
+            Intent intent = new Intent(SessionDetailsActivity.this, SessionActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override

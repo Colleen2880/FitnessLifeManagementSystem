@@ -18,8 +18,19 @@ public class AddActivity extends AppCompatActivity {
 
 
     public void onClick(View view) {
-        Intent intent = new Intent(AddActivity.this, PaymentActivity.class);
-        startActivity(intent);
+        int button = view.getId();
+
+        if(button == R.id.mybutton){
+            Intent intent = new Intent(AddActivity.this, PaymentActivity.class);
+            startActivity(intent);
+        }
+
+
+
+
+
+
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
