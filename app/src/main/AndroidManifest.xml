@@ -44,8 +44,11 @@
         </activity>
         <activity android:name=".AddCustomers">
         </activity>
-        <activity android:name=".table_manipulation">
+        <activity android:name=".Main2Activity">
         </activity>
+        <activity android:name=".ListDataActivity"></activity>
+
+        <activity android:name=".EditDataActivity"></activity>
     </application>
 
 </manifest>

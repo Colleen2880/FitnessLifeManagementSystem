@@ -28,6 +28,8 @@
     <string name="email_address">Email Address</string>
     <string name="savebutton">Save</string>
     <string name="customersname_hint">Enter a customers name</string>
+    <string name="View_Data">View Data</string>
+    <string name="DELETE">DELETE</string>
 
 
     <!-- Strings related to login -->

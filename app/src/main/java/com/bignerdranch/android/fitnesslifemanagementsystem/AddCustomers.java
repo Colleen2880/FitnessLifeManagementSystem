@@ -19,11 +19,8 @@ import java.util.UUID;
 
 public class AddCustomers extends AppCompatActivity {
 
-    EditText editTextCustomername;
 
-    TextView textViewcustomerlist;
 
-    SQLiteHelper dbHandler;
 
 
 
@@ -32,54 +29,17 @@ public class AddCustomers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_customers);
 
-        editTextCustomername = (EditText) findViewById(R.id.editTextCustomername);
-
-        dbHandler = new SQLiteHelper(this, null, null, 1);
-        printDatabase();
-
-
     }
 
-    private void onButtonClick(){
-        Customers customer = new Customers(editTextCustomername.getText().toString());
+    public void onClick(View view){
+        int id = view.getId();
 
-        dbHandler.addCustomer(customer);
-        printDatabase();
+        if(id == R.id.btnDML){
+            Intent intent = new Intent(AddCustomers.this, CustomersActivity.class);
+            startActivity(intent);
+        }
     }
 
-    public void printDatabase(){
-        String dbString = dbHandler.databaseToString();
-        textViewcustomerlist.setText(dbString);
-        editTextCustomername.setText("");
-
-
-
-
-    }
-/*
-    private void onAddRecord() {
-        Intent intent = new Intent(AddCustomers.this, CustomersActivity.class);
-        intent.putExtra(Constants.DML_TYPE, Constants.INSERT);
-        startActivityForResult(intent, Constants.ADD_RECORD);
-
-    }
-
-    String request = getIntent().getExtras().get(Constants.DML_TYPE).toString();
-
-    btnDML.setText(Constants.INSERT);
-
-
-    private void onButtonClick() {
-
-        Intent intent = new Intent();
-        intent.putExtra(Constants.NAME, etName.getText().toString());
-
-        setResult(RESULT_OK, intent);
-        finish();
-    }
-
-
-*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -90,7 +50,7 @@ public class AddCustomers extends AppCompatActivity {
         return true;
     }
 
-    ;
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

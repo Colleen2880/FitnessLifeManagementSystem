@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onClick(View v) {
         if (v.getId() == R.id.loginbutton) {
-            Intent i = new Intent(LoginActivity.this, CustomersActivity.class);
+            Intent i = new Intent(LoginActivity.this, Main2Activity.class);
 
 
             startActivity(i);

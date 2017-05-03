@@ -15,50 +15,7 @@ import android.widget.TextView;
 
 public class CustomersActivity extends AppCompatActivity {
 
-    EditText editTextCustomername;
 
-    TextView textViewcustomerlist;
-
-    SQLiteHelper dbHandler;
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-        editTextCustomername = (EditText) findViewById(R.id.editTextCustomername);
-
-        dbHandler = new SQLiteHelper(this, null, null, 1);
-        printDatabase();
-    }
-
-    public void addButtonClicked() {
-
-        Customers customer = new Customers(editTextCustomername.getText().toString());
-
-        dbHandler.addCustomer(customer);
-        printDatabase();
-
-    }
-
-    public void printDatabase(){
-        String dbString = dbHandler.databaseToString();
-        textViewcustomerlist.setText(dbString);
-        editTextCustomername.setText("");
-
-
-
-
-    }
-
-/*
-
-    SQLiteHelper sQLiteHelper =  new SQLiteHelper(CustomersActivity.this);
-
-
-    //MyDBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,40 +26,7 @@ public class CustomersActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == RESULT_OK) {
-            String name = data.getStringExtra(Constants.NAME);
-
-
-            Customers customers = new Customers();
-            customers.setName(name);
-
-
-            if (requestCode == Constants.ADD_RECORD) {
-                sQLiteHelper.insertRecord(customers);
-            }
-
-
-        }
-
-
-    }
-
-
-*/
-
-
-
-/*
-    public void printDatabase(){
-        String dbString = dbHandler.dbToString();
-
-
-    }
-*/
 
    public void onClick(View view) {
         int id = view.getId();
@@ -115,21 +39,13 @@ public class CustomersActivity extends AppCompatActivity {
         }
 
         if(id == R.id.btnAddNewRecord){
-            Intent intent = new Intent(CustomersActivity.this, AddCustomers.class);
+            Intent intent = new Intent(CustomersActivity.this, EditDataActivity.class);
             startActivity(intent);
 
         }
 
 
    }
-/*
-        if(id == R.id.buttonCustDetail) {
-
-            Intent intent = new Intent(CustomersActivity.this, SessionActivity.class);
-            startActivity(intent);
-        };
-
-*/
 
 
 
