@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logoff_menu:
                 Intent i = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
+            case R.id.take_picture:
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+            case R.id.HomeMenuOption:
+                Intent intent3 = new Intent(MainActivity.this, CustomersActivity.class);
+                startActivity(intent3);
             default:
                 return super.onOptionsItemSelected(item);
         }

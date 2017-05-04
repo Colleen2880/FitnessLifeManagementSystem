@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.bignerdranch.android.fitnesslifemanagementsystem">
-    String Camera
-    String ACTION_MANAGE_WRITE_SETTINGS
+
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18"/>
 
-    <uese-permission android:name="android.permission.CAMERA"/>
+
 
     <uses-permission android:name="ACTION_MANAGE_WRITE_SETTINGS"/>
 
@@ -46,9 +45,10 @@
         </activity>
         <activity android:name=".Main2Activity">
         </activity>
-        <activity android:name=".ListDataActivity"></activity>
-
-        <activity android:name=".EditDataActivity"></activity>
+        <activity android:name=".ListDataActivity"/>
+        <activity android:name=".EditDataActivity"/>
+        <activity android:name=".Main3Activity">
+        </activity>
     </application>
 
 </manifest>

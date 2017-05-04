@@ -30,6 +30,7 @@
     <string name="customersname_hint">Enter a customers name</string>
     <string name="View_Data">View Data</string>
     <string name="DELETE">DELETE</string>
+    <string name="take_picture">Take Picture</string>
 
 
     <!-- Strings related to login -->

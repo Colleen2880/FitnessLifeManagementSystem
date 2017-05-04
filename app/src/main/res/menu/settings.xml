@@ -7,4 +7,19 @@
 
     </item>
 
+    <item
+        android:id="@+id/take_picture"
+        android:title="@string/take_picture">
+
+    </item>
+
+    <item
+        android:id="@+id/HomeMenuOption"
+        android:title="@string/home">
+
+
+    </item>
+
+
+
 </menu>
