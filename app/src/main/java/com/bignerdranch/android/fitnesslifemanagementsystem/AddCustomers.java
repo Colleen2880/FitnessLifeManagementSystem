@@ -20,6 +20,29 @@ import java.util.UUID;
 public class AddCustomers extends AppCompatActivity {
 
 
+    /*
+
+
+
+
+
+
+    SEE MAIN ACTIVITY 3  FOR CODE FOR CAMERA
+
+
+
+
+
+
+
+
+
+
+
+
+
+     */
+
 
 
 
